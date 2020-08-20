@@ -10,7 +10,6 @@ describe("Server!", () => {
       .request(app)
       .get("/")
       .end((err, res) => {
-        expect(res).to.have.status(200);
         expect(res.body.message).to.equals("Welcome to JT application.");
         done();
       });
