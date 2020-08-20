@@ -1,5 +1,5 @@
 const request = require('supertest');
-const app = require('./server.js');
+const app = require('./server');
 
 describe('GET /', function() {
   it('return json response', function() {
