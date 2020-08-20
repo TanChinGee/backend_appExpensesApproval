@@ -35,3 +35,5 @@ app.listen(PORT, () => {
 db.sequelize.sync({ force: true }).then(() => {
   console.log("Drop and re-sync db.");
 });
+
+module.exports = app;
